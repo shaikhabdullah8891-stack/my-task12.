@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Shopping Cart</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="cart-card">
+
+            <h1>🛒 Shopping Cart</h1>
+            <p class="subtitle">Add products and manage your cart</p>
+
+            <div class="products">
+
+                <div class="product">
+                    <div>
+                        <h3>Wireless Headphones</h3>
+                        <p>₹1,499</p>
+                    </div>
+
+                    <button class="add-btn"
+                        data-name="Wireless Headphones"
+                        data-price="1499">
+                        Add to Cart
+                    </button>
+                </div>
+
+                <div class="product">
+                    <div>
+                        <h3>Smart Watch</h3>
+                        <p>₹2,499</p>
+                    </div>
+
+                    <button class="add-btn"
+                        data-name="Smart Watch"
+                        data-price="2499">
+                        Add to Cart
+                    </button>
+                </div>
+
+                <div class="product">
+                    <div>
+                        <h3>Bluetooth Speaker</h3>
+                        <p>₹999</p>
+                    </div>
+
+                    <button class="add-btn"
+                        data-name="Bluetooth Speaker"
+                        data-price="999">
+                        Add to Cart
+                    </button>
+                </div>
+
+            </div>
+
+            <h2 class="cart-title">Your Cart</h2>
+
+            <div id="cartItems"></div>
+
+            <div class="total-box">
+                <span>Total:</span>
+                <strong>₹<span id="total">0.00</span></strong>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
